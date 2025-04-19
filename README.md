@@ -33,7 +33,7 @@ if __name__ == "__main__":
 - Takes screenshots of webpages
 - Cleans and organizes extracted data
 - Supports asynchronous operation
-```
+<!-- ```
 
 With these changes, you've now:
 1. Created a centralized module structure with `webpage_extractor`
@@ -44,5 +44,22 @@ With these changes, you've now:
 To install and use this package, you would run:
 
 ```bash
-pip install -e .
+pip install -e . -->
 
+## IDE Installation
+Add the repository as a submodule. This will create a directory named "common" in your project that contains the contents of the specified repository:
+```bash
+git submodule add https://github.com/ly2xxx/common.git common
+```
+
+Initialize and update the submodule to ensure it's properly cloned:
+```bash
+git submodule init
+git submodule update
+```
+
+Commit the changes to your repository to track the addition of the submodule:
+```bash
+git add .gitmodules common
+git commit -m "Add common module as a submodule"
+```
