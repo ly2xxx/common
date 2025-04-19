@@ -55,7 +55,7 @@ git submodule add https://github.com/ly2xxx/common.git common
 Initialize and update the submodule to ensure it's properly cloned:
 ```bash
 git submodule init
-git submodule update
+git submodule update --remote
 ```
 
 Commit the changes to your repository to track the addition of the submodule:
